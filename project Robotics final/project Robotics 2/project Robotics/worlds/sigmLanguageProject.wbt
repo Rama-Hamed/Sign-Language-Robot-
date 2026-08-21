@@ -1,0 +1,46 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/BrushedAluminium.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.5773502691896257 0.5773502691896257 0.5773502691896257 2.0944
+  position -2.029024206853592e-05 -2.0290299441833228e-05 2.824295364801345
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorAppearance Parquetry {
+    type "light strip"
+    colorOverride 0.9 1 1
+    IBLStrength 12
+  }
+  wallAppearance BrushedAluminium {
+    IBLStrength 2
+  }
+}
+E-puck {
+  hidden position_0_0 2698.178143806556
+  hidden position_0_1 3100.9442441397023
+  hidden linearVelocity_0 -0.0001383515386769911 -5.313745185605259e-05 2.6536393515444228e-08
+  hidden angularVelocity_0 0.003542477622040089 -0.009223386003842452 2.5748892799541835e-11
+  hidden translation_1 0 0.02599999999999999 0.02
+  hidden rotation_1 0 -1 0 3.5915382806662763
+  hidden linearVelocity_1 -0.00018446785606252296 -7.084960466805159e-05 -1.4518786173100932e-11
+  hidden angularVelocity_1 0.0035424776239215325 -0.009223386009556408 2.3391392455879673e-10
+  hidden translation_2 0 -0.02599999999999999 0.02
+  hidden rotation_2 0 -0.9999999999999999 0 2.949297607013442
+  hidden linearVelocity_2 -0.00018446785740918766 -7.08496051857444e-05 -1.4352519172427131e-11
+  hidden angularVelocity_2 0.0035424776244294296 -0.009223386009587798 -1.824129429601575e-10
+  translation -0.314257254907877 0.4251691214443429 -6.395778894917499e-05
+  rotation -0.0003628660643713843 -6.728904344576683e-05 0.9999999319001996 -2.7748891439844248
+  controller "sign_language_controller"
+}

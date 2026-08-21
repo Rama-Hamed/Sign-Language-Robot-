@@ -1,0 +1,59 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/BrushedAluminium.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/containers/protos/WoodenBox.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.2155497530445704 0.8698929521983282 0.44364913577973025 1.0187404722843858
+  position -1.5031510267892898 -0.7397920072972092 2.147070914690825
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorAppearance Parquetry {
+    type "light strip"
+    colorOverride 0.9 1 1
+    IBLStrength 12
+  }
+  wallAppearance BrushedAluminium {
+    IBLStrength 2
+  }
+}
+E-puck {
+  hidden position_0_0 163922.0037073191
+  hidden position_0_1 133352.4745035699
+  hidden linearVelocity_0 -0.11707365078963268 0.04569864929316795 0.00013458995383159545
+  hidden angularVelocity_0 -0.0036982737320146166 -0.00455789490371111 0.0016890652834532156
+  hidden rotation_1 0 1 0 6.265413618038591
+  hidden linearVelocity_1 -0.11709089800372932 0.04574543210591823 0.000250681062810059
+  hidden angularVelocity_1 -2.2869559447192342 -5.85478217350949 -0.002269262538878469
+  hidden rotation_2 0 -1 0 1.8504560096563665
+  hidden linearVelocity_2 -0.11710039633473907 0.045695755976511196 -7.731326915511044e-06
+  hidden angularVelocity_2 -2.2869756340471397 -5.854774500898012 -0.002218103156999403
+  translation -0.3138288493681944 -0.3709021936448167 -8.127255517728985e-05
+  rotation -0.00033130854406497796 -0.0001444096808502502 0.9999999346902442 2.7698636894805326
+  controller "sign_language_controller"
+}
+WoodenBox {
+  translation -0.00371483 0.00651805 -1.84297e-14
+  size 0.07 0.07 0.08
+}
+WoodenBox {
+  translation 0.313223 -0.335534 4.59632e-14
+  name "wooden box(2)"
+  size 0.07 0.07 0.08
+}
+WoodenBox {
+  translation -0.269306 0.276539 3.30846e-14
+  name "wooden box(1)"
+  size 0.07 0.07 0.08
+}
